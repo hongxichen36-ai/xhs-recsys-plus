@@ -1,22 +1,54 @@
 ﻿# Python
 __pycache__/
 *.py[cod]
-
-# 数据（任何位置的 csv 都不提交）
-*.csv
-data/raw/
-data/processed/
-
-# 虚拟环境
-.venv/
-venv/
+*$py.class
+*.so
+.Python
 env/
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 数据
+data/
+*.parquet
+*.csv
+*.tsv
+
+# 模型权重
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+*.joblib
+*.txt
+!requirements.txt
+
+# 输出
+rank/output/
+rank/output_v6/
+recall_output/
+*.metrics.json
+*.log
+
+# 环境
+.env
+.conda/
+*.egg
 
 # IDE
-.idea/
 .vscode/
+.idea/
 *.swp
 
-# 系统
+# OS
 .DS_Store
 Thumbs.db
+
+# 临时
+tmp/
+temp/
+*.tmp
